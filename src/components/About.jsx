@@ -5,7 +5,7 @@ import classes from '../style/page.module.css'
 export default class About extends Component {
   render() {
     return (
-        <div className={classes.context}>
+        <div className={classes.elContainer}>
             <h1>About</h1>
             <p>This designer works!</p>
 

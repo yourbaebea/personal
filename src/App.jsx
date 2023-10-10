@@ -1,7 +1,5 @@
 import React, { Component} from "react";
 import Layout from "./components/Layout";
-
-import Home from './pages/Home';
 /*
 import NotFound from './pages/Not Found';
 import Contact from './pages/Contact';
@@ -21,7 +19,7 @@ export default class App extends Component {
     
     return (
       <div>
-        <Layout page={<Home />}/>
+        <Layout/>
         {/* <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Layout page={<Home />} />} />

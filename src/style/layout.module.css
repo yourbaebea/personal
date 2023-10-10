@@ -55,6 +55,7 @@
   gap: 6rem;
   font-size: 35px;
 }
+
 .navigation {
   letter-spacing: 0.05em;
   width: fit-content;
@@ -68,10 +69,17 @@
 
 .footer {
   width: 100%;
-  padding-top: 25;
+  padding-top: 25px;
   padding: 25px 100px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  position: absolute; /* Add absolute positioning to the footer */
-  bottom: 0; /* Position the footer at the bottom of the body */
   box-sizing: border-box;
+  display: flex;
+  justify-content:flex-end;
+  color: var(--typing);
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  gap: 6rem;
+}
+
+.footerTM{
+  width: fit-content;
 }
