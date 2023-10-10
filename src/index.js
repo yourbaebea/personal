@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import '../src/style/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+/*
+const root= ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>);
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
