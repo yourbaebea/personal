@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/personal/static/css/main.0a68e73f.css",
-    "main.js": "/personal/static/js/main.47030341.js",
+    "main.js": "/personal/static/js/main.231165dc.js",
     "static/js/787.39b63722.chunk.js": "/personal/static/js/787.39b63722.chunk.js",
     "static/media/Lexend-Bold.ttf": "/personal/static/media/Lexend-Bold.db264efcc7fd48090485.ttf",
     "static/media/Lexend-Regular.ttf": "/personal/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
     "index.html": "/personal/index.html",
     "main.0a68e73f.css.map": "/personal/static/css/main.0a68e73f.css.map",
-    "main.47030341.js.map": "/personal/static/js/main.47030341.js.map",
+    "main.231165dc.js.map": "/personal/static/js/main.231165dc.js.map",
     "787.39b63722.chunk.js.map": "/personal/static/js/787.39b63722.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a68e73f.css",
-    "static/js/main.47030341.js"
+    "static/js/main.231165dc.js"
   ]
 }
