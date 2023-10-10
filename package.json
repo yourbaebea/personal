@@ -1,8 +1,8 @@
 {
   "name": "yourbaebea.github.io",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://yourbaebea.github.io/",
+  "private": false,
+  "homepage": "http://yourbaebea.github.io/personal",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

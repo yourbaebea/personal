@@ -17,9 +17,11 @@ export default class Home extends Component {
                 <h1>Home</h1>
                 <p>This designer works!</p>
               </div>
+              {/*
               <div className={classes.finalContainer}>
                 <div className={classes.textContainer}><TypingText /></div>
               </div>
+              */ }
             </div>
         </div>
 
