@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da488c64.css",
+    "main.js": "/static/js/main.ccc551a4.js",
+    "static/js/787.39b63722.chunk.js": "/static/js/787.39b63722.chunk.js",
+    "static/media/Lexend-Bold.ttf": "/static/media/Lexend-Bold.db264efcc7fd48090485.ttf",
+    "static/media/Lexend-Regular.ttf": "/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
+    "index.html": "/index.html",
+    "main.da488c64.css.map": "/static/css/main.da488c64.css.map",
+    "main.ccc551a4.js.map": "/static/js/main.ccc551a4.js.map",
+    "787.39b63722.chunk.js.map": "/static/js/787.39b63722.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da488c64.css",
+    "static/js/main.ccc551a4.js"
+  ]
+}
