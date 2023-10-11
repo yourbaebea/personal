@@ -190,8 +190,8 @@ div, div:hover{
 	z-index: 998; 
 	left: 1.5vw;
 	top: 3vh;
-	width: 32px;
-	height: 32px;
+	width: min(5vw,32px);
+	height: min(5vw,32px);
 	text-align: center;
     vertical-align: middle;
     display: table-cell;
