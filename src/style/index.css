@@ -190,8 +190,8 @@ div, div:hover{
 	z-index: 998; 
 	left: 2vw;
 	top: 3vh;
-	width: min(5vw,32px);
-	height: min(5vw,32px);
+	width: min(7vw,32px);
+	height: min(7vw,32px);
 	text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -202,8 +202,8 @@ div, div:hover{
 }
 
 .iconanim {
-	width: min(5vw,32px);
-	height: min(5vw,32px);
+	width: min(7vw,32px);
+	height: min(7vw,32px);
 	
 	z-index: 999; 
 }
