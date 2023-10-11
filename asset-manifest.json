@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/personal/static/css/main.b4afe908.css",
-    "main.js": "/personal/static/js/main.9b9f51de.js",
+    "main.css": "/personal/static/css/main.e753ab9f.css",
+    "main.js": "/personal/static/js/main.37681370.js",
     "static/js/787.39b63722.chunk.js": "/personal/static/js/787.39b63722.chunk.js",
     "static/media/Lexend-Bold.ttf": "/personal/static/media/Lexend-Bold.db264efcc7fd48090485.ttf",
     "static/media/Lexend-Regular.ttf": "/personal/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
+    "static/media/heart.svg": "/personal/static/media/heart.f52cc3000558c3485cb0.svg",
     "index.html": "/personal/index.html",
-    "main.b4afe908.css.map": "/personal/static/css/main.b4afe908.css.map",
-    "main.9b9f51de.js.map": "/personal/static/js/main.9b9f51de.js.map",
+    "main.e753ab9f.css.map": "/personal/static/css/main.e753ab9f.css.map",
+    "main.37681370.js.map": "/personal/static/js/main.37681370.js.map",
     "787.39b63722.chunk.js.map": "/personal/static/js/787.39b63722.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4afe908.css",
-    "static/js/main.9b9f51de.js"
+    "static/css/main.e753ab9f.css",
+    "static/js/main.37681370.js"
   ]
 }
