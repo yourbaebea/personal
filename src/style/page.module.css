@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 10%;
-  font-family: Lexend, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  font-family: var(--primary-font), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
 }
 
@@ -37,8 +37,7 @@
   flex-direction: column;
   align-items: left;
   padding: 50px 10%;
-  font-family: Lexend, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
+  font-family: inherit;
 }
 
 .firstContainer {

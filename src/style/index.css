@@ -29,22 +29,13 @@
 	--navbar: linear-gradient(301.08deg, rgba(17, 0, 128, 0.06) 20.42%,  rgba(200, 54, 176, 0.06) 60.38%);
 
 	--primary-text-color: var(--black-2);
-	--secondary-text-color: var(--beige-2);
+	--secondary-text-color: var(--typing);
+	--a-text-color: var(--typing);
 
 	/* system settings */
 
 	--primary-font: 'Lexend';
-	--secondary-font: 'Times New Roman';
-
-	--background-size: 10%;
-	--background: 
-		linear-gradient(26.62deg, rgba(249, 124, 89, 0.326) 20.64%, rgba(249, 124, 89, 0) 49.82%), 
-		linear-gradient(56.79deg, #ba5be643 33.79%, rgba(185, 91, 230, 0) 72.67%), 
-		linear-gradient(301.08deg, rgba(252, 177, 91, 0.381) 20.42%, rgba(252, 178, 91, 0) 60.38%), 
-		linear-gradient(141.57deg, rgba(78, 172, 235, 0.377) 19.08%, rgba(78, 173, 235, 0) 98.72%, #D3E4FF);
-
-
-	  
+	--secondary-font: 'Cooper Black Regular';
 }
 
 @font-face {
@@ -59,6 +50,13 @@
 }
 
 
+@font-face {
+	font-family: 'Cooper Black Regular';
+	font-weight: 900;
+	src: local('Cooper Black Regular'), url(../../public/fonts/Cooper\ Black\ Regular.ttf) format('truetype');
+}
+
+
 
 html,
 body {
@@ -68,8 +66,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: var(--primary-text-color);
-	font-family: var(--primary-font), var(--secondary-font);
-
+	font-family: var(--primary-font), 'Times New Roman', Times, serif;
 }
 
 body::before {
@@ -98,7 +95,7 @@ a{
 }
 
 a:hover{
-	color: var(--pink-2);
+	color: var(--a-text-color);
 	pointer-events: auto;
 }
 
@@ -107,8 +104,9 @@ text {
 }
 
 div, div:hover{
-	pointer-events: auto;
-	/*pointer-events: none;*/
+	pointer-events: none;
+	/*change this if hold and click is not happening, this is not allowing pointers except for link
+	pointer-events: auto;*/
 }
 
 

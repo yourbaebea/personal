@@ -26,7 +26,7 @@
   padding-bottom: 2vh;
   background:var(--navbar);
   box-sizing: border-box;
-  font-family: Cooper Black, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  font-family: var(--secondary-font), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
 }
 
@@ -44,7 +44,7 @@
 .navHome {
   color: #000;
   font-size: max(2vw, 20px);
-  font-family: Cooper Black, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  font-family: var(--secondary-font), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   letter-spacing: 0.05em;
   width: min-content;
@@ -78,7 +78,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content:flex-end;
-  color: var(--typing);
+  color: var(--secondary-text-color);
   font-size: 15px;
   letter-spacing: 0.01em;
 }
