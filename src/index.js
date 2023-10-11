@@ -9,6 +9,17 @@ const root= ReactDOM.createRoot(document.getElementById('root'));
 root.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>);
 */
 
+window.onscroll = function () {
+  scrollRotate();
+};
+
+function scrollRotate() {
+  let image = document.getElementById("iconanim");
+  if (image) {
+    image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
+  }
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

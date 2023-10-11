@@ -83,7 +83,34 @@ body::before {
 	background-repeat: no-repeat;
 	background-color: rgba(200, 54, 176, 0.07);
 	z-index: -1;
-  }
+}
+
+
+main {
+	width: 100%; /* full window width */
+	padding-bottom: 2rem;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	pointer-events: auto;
+}
+
+a:hover{
+	color: var(--pink-2);
+	pointer-events: auto;
+}
+
+text {
+	color: inherit;
+}
+
+div, div:hover{
+	pointer-events: auto;
+	/*pointer-events: none;*/
+}
+
 
 
 .gradient-moving-1 {
@@ -159,32 +186,54 @@ body::before {
 	animation: moveGradient5 20s linear infinite alternate;
 }
 
- 
-
-main {
-	width: 100%; /* full window width */
-	padding-bottom: 2rem;
+.button{
+	position: fixed;
+	z-index: 998; 
+	left: 2vw;
+	top: 3vh;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+	font-family: Cooper Black, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+	color: #000;
+  	font-size: max(0.8vw, 10px);
 }
 
-a{
-	color: inherit;
-	text-decoration: none;
-	pointer-events: auto;
+.iconanim {
+	/*width: min(5vw,32px);
+	height: min(5vw,32px);
+	*/
+	z-index: 999; 
+	width: 32px;
+	height: 32px;
+	background-color: #00849605;
+	background-image: url("../../public/heart.svg");
 }
 
-a:hover{
-	color: var(--pink-2);
-	pointer-events: auto;
+.wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
 }
 
-text {
-	color: inherit;
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
 
-div, div:hover{
-	pointer-events: none;
+#reload {
+    width: 50px;
+    height: 50px;
 }
-
 
 
 @keyframes moveGradient1 {

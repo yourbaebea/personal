@@ -1,0 +1,19 @@
+.List {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  pointer-events: auto;
+}
+.listContainer {
+  display: flex;
+  font-size: 18px;
+  background-color: #eee;
+  flex-direction: column;
+}
+.itemContainer {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 25px 70px;
+  margin: 15px 50px;
+}
