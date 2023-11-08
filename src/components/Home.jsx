@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import style from "../style/typing.module.css"
+import React, { useState, useEffect } from "react";
+import classes from "../style/page.module.css";
 
-const TypingText = () => {
+const Home = () => {
   const _CONTENT = [
     "probably should've taken more design classes.... this seems pretty empty",
     "click the heart to go back to the top of the page!",
+    "the text is not very colorful but im feeling lazy. maybe you can do something about it?"
   ];
 
   let _PART = 0;
   let _PART_INDEX = 0;
   let _INTERVAL_VAL;
 
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   useEffect(() => {
     function Type() {
@@ -29,10 +30,8 @@ const TypingText = () => {
 
     function Delete() {
       let currentText = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-
-      // Check for square brackets and exclude their content
-      let openBracketIndex = currentText.lastIndexOf('[');
-      let closeBracketIndex = currentText.lastIndexOf(']');
+      let openBracketIndex = currentText.lastIndexOf("[");
+      let closeBracketIndex = currentText.lastIndexOf("]");
 
       if (openBracketIndex !== -1 && closeBracketIndex !== -1 && closeBracketIndex > openBracketIndex) {
         currentText = currentText.substring(0, openBracketIndex) + currentText.substring(closeBracketIndex + 1);
@@ -41,7 +40,7 @@ const TypingText = () => {
       setText(currentText);
       _PART_INDEX--;
 
-      if (currentText === '') {
+      if (currentText === "") {
         clearInterval(_INTERVAL_VAL);
 
         if (_PART === _CONTENT.length - 1) _PART = 0;
@@ -62,7 +61,18 @@ const TypingText = () => {
     };
   }, []);
 
-  return <div className={style.text}>{text}</div>;
+  return (
+    <div className={classes.elContainer}>
+      <div>
+        <h1>Home</h1>
+      </div>
+      <div className={classes.finalContainer}>
+        <div className={classes.textContainer}>
+          <div className={classes.text}>{text}</div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default TypingText;
+export default Home;

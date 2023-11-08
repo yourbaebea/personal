@@ -19,7 +19,7 @@
 	--pink-1:  rgb(186, 91, 230);
 	--orange-2: rgb(255, 197, 131);
 	--blue-4: rgb(78, 172, 235);
-	--typing:  rgb(92, 16, 92);
+	--typing:  rgb(128, 24, 128);
 	--pink-2:  rgb(133, 58, 186);
 	--navbar-text: var(--black-2);
 	--blue-5:  rgb(136, 189, 224);
@@ -111,9 +111,6 @@ a{
 
 a:hover{
 	color: var(--a-text-color);
-	pointer-events: auto;
-	text-decoration: none;
-	cursor: pointer;
 }
 
 text {
@@ -121,8 +118,11 @@ text {
 	text-decoration: none;
 }
 
-sort, sort:hover{
+divaction,divaction:hover{
+	color: inherit;
 	pointer-events: auto;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 div, div:hover{
@@ -227,8 +227,16 @@ div, div:hover{
 	height: min(7vw,32px);
 	
 	z-index: 999; 
+	transition: opacity 2s, margin-top .5s, margin-bottom .5s;
+	-webkit-transition: opacity 2s, margin-top .5s, margin-bottom .5s;
+  }
+  
+  
+.iconanim:hover {
+	transform: scale(1.1);
+	opacity: 0.5;
+	margin-top: -10px;
 }
-
 
 @keyframes moveGradient1 {
 	0% {

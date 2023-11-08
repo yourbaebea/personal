@@ -68,6 +68,17 @@
   align-items: end;
   justify-content: flex-end;
   flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+	transition: opacity 1s, margin-top .5s, margin-bottom .5s;
+	-webkit-transition: opacity 1s, margin-top .5s, margin-bottom .5s;
+
+}
+  
+  
+.navigation:hover {
+	opacity: 0.3;
+	margin-top: -10px;
 }
 
 
@@ -85,4 +96,39 @@
 
 .footerTM{
   width: fit-content;
+}
+
+
+
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  align-items: left;
+  padding: 50px 20vw;
+  font-family: inherit;
+}
+
+.firstContainer {
+  justify-content: normal;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.elContainer {
+  justify-content: normal;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.endContainer {
+  justify-content: normal;
+  min-height: calc(100vh - 150px);
+  width: 100%;
 }

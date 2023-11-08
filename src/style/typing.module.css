@@ -1,6 +1,0 @@
-.text {
-    display: inline-block;
-    color: var(--secondary-text-color);
-    border-right: 3px solid var(--secondary-text-color);
-}
-

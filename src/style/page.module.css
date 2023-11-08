@@ -3,6 +3,13 @@
   min-height: calc(100vh - 200px);
 }
 
+.text {
+  display: inline-block;
+  color: var(--secondary-text-color);
+  border-right: 3px solid var(--secondary-text-color);
+}
+
+
 .context {
   width: inherit;
   min-height: inherit;
@@ -15,54 +22,11 @@
     'Liberation Sans', sans-serif;
 }
 
-.container{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: normal;
-
-  
-}
-
-.content{
-  width: 100%;
-  box-sizing: border-box;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-  flex: 1;
-  flex-direction: column;
-  align-items: left;
-  padding: 50px 20vw;
-  font-family: inherit;
-}
-
-.firstContainer {
-  justify-content: normal;
-  min-height: calc(100vh - 100px);
-  width: 100%;
-}
-
-.elContainer {
-  justify-content: normal;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.endContainer {
-  justify-content: normal;
-  min-height: calc(100vh - 150px);
-  width: 100%;
-}
-
 .textContainer {
   color: #000;
   font-size: 20px;
   letter-spacing: 0.03em;
-  width: 60vw;
+  width: 50vw;
   height: fit-content;
   flex-direction: row;
   flex-wrap: wrap;
@@ -105,14 +69,19 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  padding: 5%;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
 }
 
 .listEl{
   margin-top: 5%;
   margin-left: 5%;
-  width: 100px;
+  width: 60%;
   height: fit-content;
-  background-color:  rgba(228, 213, 75, 0.525);
+  background-color:  rgba(228, 213, 75, 0.375);
   border-radius: 10px;
   padding: 2%;
   align-items: center;
@@ -126,4 +95,48 @@
 
 .redText {
   background-color: rgba(255, 0, 0, 0.111)
+}
+
+
+.socialContainer{
+  height: 60vh;
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3vh;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.span{
+  align-self: center;
+}
+
+.logo{
+  transition: opacity 2s, margin-top .5s, margin-bottom .5s;
+	-webkit-transition: opacity 2s, margin-top .5s, margin-bottom .5s;
+}
+
+
+.logo:hover {
+	transform: scale(1.1);
+  opacity: 0.3;
+  animation: pulse 6s linear infinite;
+  margin-top: -10px;
+}
+
+@keyframes pulse {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

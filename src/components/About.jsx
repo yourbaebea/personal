@@ -7,7 +7,6 @@ export default class About extends Component {
 
     this.state = {
       text: "Hi my name is Ana Beatriz Marques and I'm a software engineering student at the University of Coimbra. While I may not be a designer, I want to express my creativity and do some cool designs (and maybe learn some new tricks). Here's a bit about me: I'm a book enthusiast, I love makeup, but the thing I enjoy most is being cozy in bed with a steaming cup of coffee indulging in old episodes of my favorite show. When I'm not buried in projects or exams, you might find me find me at the nearest thrift shop trying to find some cute outfits but if you don't, check out my contacts!",
-      
       buttonColors: Array(112).fill("var(--secondary-text-color)"),
     };
   }
