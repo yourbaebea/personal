@@ -58,32 +58,72 @@
   width: 100%;
 }
 
-
 .textContainer {
-  width: inherit;
-  height: inherit;
-  margin: 50px 0 0 0;
-  text-align: left;
-  font-weight: 900;
-  font-size: 30px;
- 
-}
-
-.text {
   color: #000;
   font-size: 20px;
   letter-spacing: 0.03em;
-  position: relative;
-  font-family: inherit;
-  left: 20%;
-  top: 30%;
-  width: min(50vw, 300px);
+  width: 60vw;
   height: fit-content;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 10%;
+
 }
-.rectangle1 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background-color: #d9d9d9;
+
+.textColor{
+  margin-right: 10px; 
+  margin-top: 20px;
+}
+
+
+.listContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list{
+  width: 30%;
+}
+
+.listTitle{
+  margin-top: 8vh;
+  font-weight:900;
+  font-size: large;
+  height: 8vh;
+  align-self: center;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.listElements{
+  min-height: 40vh;
+  background: var(--list-gradient);
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.listEl{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 100px;
+  height: fit-content;
+  background-color:  rgba(228, 213, 75, 0.525);
+  border-radius: 10px;
+  padding: 2%;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.greenText {
+  background-color:  rgba(7, 111, 50, 0.162);;
+}
+
+.redText {
+  background-color: rgba(255, 0, 0, 0.111)
 }

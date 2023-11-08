@@ -3,7 +3,6 @@ import style from "../style/typing.module.css"
 
 const TypingText = () => {
   const _CONTENT = [
-    "Hi my name is Ana Beatriz Marques and I'm a software engineering student",
     "probably should've taken more design classes.... this seems pretty empty",
     "click the heart to go back to the top of the page!",
   ];

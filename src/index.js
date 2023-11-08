@@ -16,7 +16,10 @@ window.onscroll = function () {
 function scrollRotate() {
   let image = document.getElementById("iconanim");
   if (image) {
-    image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
+    const scrollPosition = window.pageYOffset;
+    const fullPageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const rotationDegrees = (scrollPosition / fullPageHeight) * 3 * 360;
+    image.style.transform = "rotate(" + rotationDegrees + "deg)";
   }
 }
 
