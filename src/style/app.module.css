@@ -43,7 +43,7 @@
 }
 .navHome {
   color: #000;
-  font-size: max(2vw, 20px);
+  font-size: max(2vw, 40px);
   font-family: var(--secondary-font), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   letter-spacing: 0.05em;
@@ -57,10 +57,11 @@
   width: fit-content;
   align-self: stretch;
   gap: 6vw;
-  font-size: max(1.8vw, 20px);
 }
+  
 
 .navigation {
+  font-size: max(1.8vw, 40px);
   letter-spacing: 0.05em;
   width: fit-content;
   align-self: flex-end;
@@ -90,7 +91,7 @@
   display: flex;
   justify-content:flex-end;
   color: var(--secondary-text-color);
-  font-size: 15px;
+  font-size: var(--font-size);
   letter-spacing: 0.01em;
 }
 

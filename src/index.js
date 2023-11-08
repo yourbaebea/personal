@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import '../src/style/index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-/*
-const root= ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>);
-*/
+import './style/index.css'; // Make sure to include your CSS file with the cursorPrint styles
 
 window.onscroll = function () {
   scrollRotate();
@@ -19,9 +14,48 @@ function scrollRotate() {
     const scrollPosition = window.pageYOffset;
     const fullPageHeight = document.documentElement.scrollHeight - window.innerHeight;
     const rotationDegrees = (scrollPosition / fullPageHeight) * 3 * 360;
-    image.style.transform = "rotate(" + rotationDegrees + "deg)";
+    image.style.transform = `rotate(${rotationDegrees}deg)`;
   }
 }
+
+document.addEventListener("click", (e) => {
+  handleDocumentClick(window.pageXOffset + e.clientX, window.pageYOffset + e.clientY);
+});
+
+
+
+  const handleDocumentClick = (x, y) => {
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.style.position = 'absolute';
+    svg.style.left = x + 'px';
+    svg.style.top = y + 'px';
+    svg.style.width= "50px";
+    svg.style.height= "50px";
+    svg.setAttribute('opacity', '0.2');
+    
+    svg.setAttribute('viewBox', `0 0 30 30`);
+  
+    // Calculate the position to center the heart within the viewBox
+    const heartX = 3;
+    const heartY = 5;
+    const random = Math.random() * 360;
+  
+    const heart = document.createElementNS(svgNS, 'path');
+    heart.setAttribute('d', "M17.516 3c2.382 0 4.487 1.564 4.487 4.712 0 4.963-6.528 8.297-10.003 11.935-3.475-3.638-10.002-6.971-10.002-11.934 0-3.055 2.008-4.713 4.487-4.713 3.18 0 4.846 3.644 5.515 5.312.667-1.666 2.333-5.312 5.516-5.312zm0-2c-2.174 0-4.346 1.062-5.516 3.419-1.17-2.357-3.342-3.419-5.515-3.419-3.403 0-6.484 2.39-6.484 6.689 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-4.586-3.414-6.689-6.484-6.689");
+    heart.setAttribute('fill', 'var(--secondary-text-color)');
+  
+    // Position the heart inside the viewBox
+    heart.setAttribute('transform', `translate(${heartX} ${heartY})`);
+  
+    svg.appendChild(heart);
+    svg.classList.add('cursorPrint');
+  
+    document.body.appendChild(svg);
+  };
+  
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,7 +64,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

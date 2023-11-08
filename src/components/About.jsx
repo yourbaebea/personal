@@ -45,7 +45,7 @@ export default class About extends Component {
       <div className={classes.elContainer}>
         <h1>About</h1>
 
-        <div className={classes.textContainer}>
+        <div className={classes.aboutContainer}>
           {words.map((word, index) => (
             <a className={classes.textColor}
               key={index}

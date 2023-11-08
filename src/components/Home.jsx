@@ -63,9 +63,7 @@ const Home = () => {
 
   return (
     <div className={classes.elContainer}>
-      <div>
-        <h1>Home</h1>
-      </div>
+
       <div className={classes.finalContainer}>
         <div className={classes.textContainer}>
           <div className={classes.text}>{text}</div>

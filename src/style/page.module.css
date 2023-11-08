@@ -4,6 +4,8 @@
 }
 
 .text {
+  margin-top: 10%;
+  font-size: xx-large;
   display: inline-block;
   color: var(--secondary-text-color);
   border-right: 3px solid var(--secondary-text-color);
@@ -24,7 +26,7 @@
 
 .textContainer {
   color: #000;
-  font-size: 20px;
+  font-size: var(--font-size);
   letter-spacing: 0.03em;
   width: 50vw;
   height: fit-content;
@@ -33,6 +35,20 @@
   display: flex;
   margin-top: 10%;
   margin-left: 10%;
+
+}
+
+.aboutContainer {
+  color: #000;
+  font-size: var(--font-size);
+  letter-spacing: 0.03em;
+  width: 40vw;
+  height: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 20%;
 
 }
 
@@ -53,9 +69,9 @@
 }
 
 .listTitle{
+  font-size: var(--font-size);
   margin-top: 8vh;
   font-weight:900;
-  font-size: large;
   height: 8vh;
   align-self: center;
   text-align: center;
@@ -77,6 +93,7 @@
 }
 
 .listEl{
+  font-size: var(--font-size);
   margin-top: 5%;
   margin-left: 5%;
   width: 60%;
@@ -87,6 +104,10 @@
   align-items: center;
   text-align: center;
   
+}
+
+.listEl:hover{
+  color: var(--primary-text-color)
 }
 
 .greenText {

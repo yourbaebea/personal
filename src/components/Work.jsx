@@ -39,7 +39,7 @@ export default class Work extends Component {
       <div className={classes.listTitle}>All Options</div>
       <ReactSortable className={classes.listElements} group="groupName" list={allOptions} setList={(newList) => this.setState({ allOptions: newList })}>
         {allOptions.map((item) => (
-          <divaction className={classes.listEl} key={item.id}>{item.name}</divaction>
+          <a className={classes.listEl} key={item.id}>{item.name}</a>
         ))}
       </ReactSortable>
     </div>
@@ -48,8 +48,8 @@ export default class Work extends Component {
       <div className={classes.listTitle}>I'm an experienced programmer in ...</div>
       <ReactSortable className={classes.listElements} group="groupName" list={yesList} setList={(newList) => this.setState({ yesList: newList })}>
         {yesList.map((item) => (
-          <divaction className={`${classes.listEl} ${item.value === 'yes' ? classes.greenText : classes.redText}`}
-          key={item.id}>{item.name}</divaction>
+          <a className={`${classes.listEl} ${item.value === 'yes' ? classes.greenText : classes.redText}`}
+          key={item.id}>{item.name}</a>
         ))}
       </ReactSortable>
     </div>
@@ -58,7 +58,7 @@ export default class Work extends Component {
       <div className={classes.listTitle}>I haven't used it yet but I would be willing to try!</div>
       <ReactSortable className={classes.listElements} group="groupName" list={noList} setList={(newList) => this.setState({ noList: newList })}>
         {noList.map((item) => (
-          <divaction className={`${classes.listEl} ${item.value === 'no' ? classes.greenText : classes.redText}`} key={item.id}>{item.name}</divaction>
+          <a className={`${classes.listEl} ${item.value === 'no' ? classes.greenText : classes.redText}`} key={item.id}>{item.name}</a>
         ))}
       </ReactSortable>
     </div>

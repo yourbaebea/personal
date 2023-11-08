@@ -44,6 +44,7 @@
 	--primary-text-color: var(--black-2);
 	--secondary-text-color: var(--typing);
 	--a-text-color: var(--typing);
+	--font-size: 20px;
 
 	/* system settings */
 
@@ -118,6 +119,10 @@ text {
 	text-decoration: none;
 }
 
+p{
+	font-size: var(--font-size);
+}
+
 divaction,divaction:hover{
 	color: inherit;
 	pointer-events: auto;
@@ -129,6 +134,29 @@ div, div:hover{
 	pointer-events: none;
 	/*change this if hold and click is not happening, this is not allowing pointers except for link
 	pointer-events: auto;*/
+}
+
+h1{
+	font-family: var(--secondary-font), 'Times New Roman', Times, serif;
+	font-size: max(1.8vw, 20px);
+	letter-spacing: 0.05em;
+}
+
+.cursorPrint {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 50%;
+	animation: cursorDisappear 5s forwards;
+	pointer-events: none;
+}
+  
+@keyframes cursorDisappear {
+	to {
+	  transform: translate(-50%, -5000%) rotate(360deg);
+	  opacity: 0;
+	}
 }
 
 
