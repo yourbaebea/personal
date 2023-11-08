@@ -36,14 +36,14 @@ export default class App extends Component {
 
       <div className={classes.content}>
 
-        <div className={classes.elContainer}>
+        <div className={classes.firstContainer}>
           <Home/>
         </div>
-        <div className={classes.firstContainer}>
+        <div className={classes.elContainer}>
           <section id="about"></section>
           <About/>
         </div>
-        <div className={classes.endContainer}>
+        <div className={classes.elContainer}>
           <section id="work"></section>
           <Work/>
         </div>

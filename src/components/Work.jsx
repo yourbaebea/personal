@@ -16,7 +16,7 @@ export default class Work extends Component {
         {value: "yes", id: "C/C++", name: "C/C++" },
         {value: "no", id: "Ruby", name: "Ruby" },
         {value: "yes", id: "Python", name: "Python" },
-        {value: "yes", id: "Kotlin", name: "fiona" },
+        {value: "yes", id: "Kotlin", name: "Kotlin" },
         {value: "no", id: "PHP", name: "PHP" },
       ],
       yesList: [],
