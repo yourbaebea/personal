@@ -124,8 +124,8 @@
   margin-top: 8vh;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3vh;
 }
 
 .social{
@@ -133,7 +133,10 @@
   flex-direction: column;
   align-self: center;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 30vh;
 }
 
 .span{
